@@ -5,7 +5,7 @@ with open("app/README.md", "r") as f:
 
 setup(
     name="namada",
-    version="0.0.0",
+    version="0.0.1",
     description="Python package for Namada",
     package_dir={"": "app"},
     packages=find_packages(where="app"),

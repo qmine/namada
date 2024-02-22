@@ -1,6 +1,9 @@
 # Python package for Namada
 A package for Namada.
 
+## Install
+**pip install namada <br>**
+
 ## How to use
 _After installing the package use following import:_ <br>
 

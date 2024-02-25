@@ -1,3 +1,5 @@
 .pypirc
 build/
 dist/
+files/
+app/namada/src/workshop.py

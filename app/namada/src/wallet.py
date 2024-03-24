@@ -1,4 +1,4 @@
-import os
+import pexpect
 
 class Wallet(object):
     """docstring for Wallet"""
@@ -6,7 +6,7 @@ class Wallet(object):
         super(Wallet, self).__init__(*args, **kwargs)
         self.rpc = rpc
 
-    def list():
+    def list(self):
         """
         --chain-id <chain-id>  The chain ID.
         --transparent          List transparent keys / addresses only.
@@ -19,5 +19,10 @@ class Wallet(object):
         --decrypt              Decrypt keys that are encrypted.
         --unsafe-show-secret   UNSAFE: Print the secret / spending keys.
         """
-        return os.system("namada wallet list")
+        command = 'namada wallet list'
+        child = pexpect.spawn(command, encoding='utf-8')
+        child.logfile_read = sys.stdout
+        # child.expect('Enter your decryption password:')
+        # child.sendline(settings.ACCOUNT_PASSWORD)
+        return child.before
 

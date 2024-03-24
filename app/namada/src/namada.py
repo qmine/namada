@@ -4,14 +4,14 @@ from wallet import Wallet
 
 class Namada(object):
     status = "Comming soon..."
-    node = ''
+    rpc = ''
     alias = ''
 
     """docstring for Namada Python package"""
-    def __init__(self, node='', *args, **kwargs):
+    def __init__(self, rpc='', *args, **kwargs):
         super(Namada, self).__init__(*args, **kwargs)
-        self.node = node
-        self.wallet = Wallet(self.node)
+        self.rpc = rpc
+        self.wallet = Wallet(self.rpc)
         
     # def test(self):
     #     return os.system("namada wallet list")

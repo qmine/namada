@@ -2,9 +2,9 @@ import os
 
 class Wallet(object):
     """docstring for Wallet"""
-    def __init__(self, node='', *args, **kwargs):
+    def __init__(self, rpc='', *args, **kwargs):
         super(Wallet, self).__init__(*args, **kwargs)
-        self.node = node
+        self.rpc = rpc
 
     def list():
         """

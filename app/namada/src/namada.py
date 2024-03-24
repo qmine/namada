@@ -1,5 +1,5 @@
 import os
-from .wallet import Wallet
+from wallet import Wallet
 
 
 class Namada(object):

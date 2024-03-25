@@ -1,5 +1,5 @@
 import requests
-from .commands.node import Node
+from commands.node import Node
 from .commands.relayer import Relayer
 from .commands.client import Client
 from .commands.wallet import Wallet

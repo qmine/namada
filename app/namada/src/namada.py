@@ -1,17 +1,17 @@
 import requests
-from src.commands.node import Node
-from src.commands.relayer import Relayer
-from src.commands.client import Client
-from src.commands.wallet import Wallet
-from src.commands.ethereum_bridge_pool import EthereumBridgePool
-from src.commands.ledger import Ledger
-from src.commands.tx import TX
-from src.commands.transfer import Transfer
-from src.commands.ibc_transfer import IBCTransfer
-from src.commands.update_account import UpdateAccount
-from src.commands.init_proposal import InitProposal
-from src.commands.vote_proposal import VoteProposal
-from src.commands.reveal_pk import RevealPK
+from .commands.node import Node
+from .commands.relayer import Relayer
+from .commands.client import Client
+from .commands.wallet import Wallet
+from .commands.ethereum_bridge_pool import EthereumBridgePool
+from .commands.ledger import Ledger
+from .commands.tx import TX
+from .commands.transfer import Transfer
+from .commands.ibc_transfer import IBCTransfer
+from .commands.update_account import UpdateAccount
+from .commands.init_proposal import InitProposal
+from .commands.vote_proposal import VoteProposal
+from .commands.reveal_pk import RevealPK
 
 
 class Namada(object):

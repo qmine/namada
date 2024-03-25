@@ -2,5 +2,6 @@
 build/
 dist/
 files/
+*.egg-info/
 app/namada/src/workshop.py
 *.pyc

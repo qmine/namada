@@ -1,5 +1,5 @@
-from commands.sub.node.ledger import Ledger
-from commands.sub.node.config import Config
+from .sub.node.ledger import Ledger
+from .sub.node.config import Config
 
 class Node():
     """docstring for Node"""

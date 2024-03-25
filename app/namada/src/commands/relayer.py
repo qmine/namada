@@ -1,5 +1,5 @@
-from commands.sub.relayer.ethereum_bridge_pool import EthereumBridgePool
-from commands.sub.relayer.validator_set import ValidatorSet
+from .sub.relayer.ethereum_bridge_pool import EthereumBridgePool
+from .sub.relayer.validator_set import ValidatorSet
 
 class Relayer(object):
     """docstring for Relayer"""
